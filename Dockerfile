@@ -6,7 +6,7 @@ RUN apt-get update \
     && apt-get install -y \
        python-pip \
     && apt-get clean \
-    && pip3 install
+    && pip install \
        SNAKES==0.9.25 \
        sqlalchemy==1.1.7                
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
